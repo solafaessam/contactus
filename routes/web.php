@@ -1,5 +1,6 @@
 <?php
-use Illuminate\Http\Request;
+//use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.contactUs');
 });
-
+/*
 Route::get('/contact_us', function () {
     $name='ali';
 
@@ -24,7 +25,7 @@ Route::get('/contact_us', function () {
 });
 
 Route::post('/send', function (Request $request) {
-       $name= $request-> name;
+     $name= $request-> name;
      return view('pages.contactUs', compact('name'));
 });
 
@@ -47,4 +48,17 @@ Route::get('task/show/{id}', function ($id){
     $task = $tasks[$id];
     //dd($task);
     return view('Pages.show', compact('task'));
+});*/
+
+Route::get('tasks', function (){
+    $tasks = DB::table('tasks')->get();
+    //dd($tasks);
+    return view('pages/tasks', compact('tasks'));
+
+});
+
+Route::get('tasks/show/{id}' , function ($id){
+    $task = DB::table('tasks')->find( $id);
+    //dd($task);
+    return view('pages/show', compact('task'));
 });
