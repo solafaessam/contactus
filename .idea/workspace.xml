@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfb1cbe4-7020-45b5-9c6c-65a1cceb7911" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/layout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/todo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/tasks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/tasks.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +143,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../phpoop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -178,7 +180,12 @@
       <workItem from="1605447837345" duration="745000" />
       <workItem from="1605975405787" duration="4630000" />
       <workItem from="1606064715021" duration="1302000" />
-      <workItem from="1606834215885" duration="10156000" />
+      <workItem from="1606834215885" duration="12997000" />
+      <workItem from="1607197966524" duration="934000" />
+      <workItem from="1607199625738" duration="1069000" />
+      <workItem from="1607206815367" duration="1477000" />
+      <workItem from="1607208742428" duration="1635000" />
+      <workItem from="1607210643766" duration="805000" />
     </task>
     <servers />
   </component>
@@ -186,9 +193,13 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606066142467">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1606856324259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606066142467" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606856324259" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1607209899908">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1607209899908" />
   </component>
 </project>
