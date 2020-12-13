@@ -10,14 +10,14 @@
                 <div class="panel-body">
                     <!-- Display Validation Errors -->
                     <!-- New Task Form -->
-                    <form action="#" method="POST" class="form-horizontal">
-
-                        <!-- Task Name -->
+                    <form action="/store" method="post" class="form-horizontal">
+                           @csrf
+                    <!-- Task Name -->
                         <div class="form-group">
-                            <label for="task-name" class="col-sm-3 control-label">Task</label>
+                            <label for="task-title" class="col-sm-3 control-label">Task</label>
 
                             <div class="col-sm-6">
-                                <input type="text" name="name" id="task-name" class="form-control" value="">
+                                <input type="text" name="title" id="task-title" class="form-control">
                             </div>
                         </div>
 
