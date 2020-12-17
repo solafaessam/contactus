@@ -1,4 +1,5 @@
 <?php
+use App\Models\Task;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -63,16 +64,30 @@ Route::get('tasks/show/{id}' , function ($id){
     return view('pages/show', compact('task'));
 });
 
-Route::get('app', function () {
-    $tasks = DB::table('tasks')->get();
+Route::get('todo', function () {
+    //$tasks = DB::table('tasks')->get();
+    $tasks= Task::all();
+    //dd($tasks);
     return view('pages/todo', compact('tasks'));
 
 });
 
 Route::post('/store', function (Request $request){
-    DB::table('tasks')->insert([
-        'title' =>$request->title
-    ]);
+    //DB::table('tasks')->insert([
+       // 'title' =>$request->title
+   // ]);
+    $task = new Task();
+
+    $task->title = $request->title;
+
+    $task->save();
+
     return redirect()->back();
 });
+
+Route::get('delete-tasks/{id}' , function($id){
+   $task = Task::find($id);
+   $task->delete();
+    return redirect()->back();
+})->name('delete.task');
 
